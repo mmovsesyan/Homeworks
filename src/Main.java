@@ -9,15 +9,15 @@ public class Main {
         book.add("7-9658014555", new Contact("Albert", "7-9658014555"));
         book.add("7-9658080500", new Contact("Nastasia", "7-9658080500"));
 
-//        System.out.println(book.getByPhone("359-9658020000"));
-//        try {
-//            book.removeByPhone("7-9658080500");
-//        } catch (IllegalArgumentException e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println(book.contactSort());
-//
-//        System.out.println(book.searchBy(contact -> contact.getName().contains("l")));
+        System.out.println(book.getByPhone("359-9658020000"));
+        try {
+            book.removeByPhone("7-9658080500");
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
+        System.out.println(book.contactSort());
+
+        System.out.println(book.searchBy(contact -> contact.getName().contains("l")));
         System.out.println(book.searchByLambda("*rt"));
         System.out.println(book.getCountries());
     }
